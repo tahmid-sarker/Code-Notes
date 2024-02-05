@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        * {
+            color: red;
+        }
+        p {
+            color: orange;
+        }
+        .class {
+            color: yellow;
+        }
+        #id {
+            color: green;
+        }
+        li {
+            color: blue;
+        }
+        li[value] {
+            color: indigo !important;
+            color: violet;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Specificity</h1>
+    <p class="class">Specificity is the means by which browsers decide which CSS property values are the most relevant to an element and, therefore, will be applied. Specificity is based on the matching rules which are composed of different sorts of CSS selectors.</p>
+    <p class="class" id="id">Specificity is a weight that is applied to a given CSS declaration, determined by the number of each selector type in the matching selector. When multiple declarations have equal Specificity, the last declaration found in the CSS is applied to the element. Specificity only applies when the same element is targeted by multiple declarations. As per the CSS specification, when a conflict occurs, the declaration with the highest Specificity takes precedence.</p>
+    <p>Specificity is calculated based on the following rules:</p>
+    <ul>
+        <li>Inline styles (Presence of style attribute in the HTML element).</li>
+        <li value="1">ID selectors.</li>
+        <li value="2">Class selectors, attributes selectors, and pseudo-classes.</li>
+        <li>Type selectors and pseudo-elements.</li>
+    </ul>
+</body>
+</html>
