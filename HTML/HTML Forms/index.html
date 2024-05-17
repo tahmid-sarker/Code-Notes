@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Forms</title>
+    <style>
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center">Registration Form</h1>
+    <fieldset>
+        <legend style="color: darkgreen;">Please fill out this form with the required information</legend>
+        <form action="#" method="post">
+            <!--Enter your name-->
+            <label for="name">Enter your name:
+                <input type="text" name="name" placeholder="Enter Name" id="name" autofocus required>
+            </label>
+            <!--Select your gender-->
+            <label for="gender">Select your gender:
+                <input type="radio" name="gender" id="gender" value="male" checked required>Male
+                <input type="radio" name="gender" id="gender" value="female" required>Female
+            </label>
+            <!--Enter your birth date-->
+            <label for="date">Enter your birth date:
+                <input type="date" name="date" id="date" required>
+            </label>
+            <!--Enter your age-->
+            <label for="number">Enter your age:
+                <input type="number" name="number" min="13" max="120" id="number" required>
+            </label>
+            <!--Select your country-->
+            <label for="country">Select your country
+                <select name="country" id="country">
+                    <option value="">(select one)</option>
+                    <option value="1">Bangladesh</option>
+                    <option value="2">India</option>
+                    <option value="3">Pakistan</option>
+                    <option value="4">Sri Lanka</option>
+                </select>
+            </label>
+            <!--Are you married?-->
+            <label for="married">Are you married?
+                <input type="checkbox" name="married" id="married">Yes
+                <input type="checkbox" name="married" id="married">No
+            </label>
+            <!--Upload your image-->
+            <label for="image">Upload your image
+                <input type="file" name="image" accept="image/*" id="image">
+            </label>
+            <!--Enter your portfolio-->
+            <label for="portfolio">Enter your portfolio
+                <input type="url" name="portfolio" value="https://" id="portfolio" required>
+            </label>
+            <!--Enter your mobile number-->
+            <label for="number">Enter your mobile number
+                <input type="tel" name="number" placeholder="Enter Mobile Number" id="number" required>
+            </label>
+            <!--Enter your email-->
+            <label for="email">Enter your email
+                <input type="email" name="email" placeholder="your@email.com" id="email">
+            </label>
+            <!--Enter your password-->
+            <label for="password">Enter your password
+                <input type="password" name="password" pattern="[a-z0-5]{8,}" placeholder="Enter Password" id="password" required>
+            </label>
+            <!--Tell more about yourself-->
+            <label for="textarea">Tell more about yourself
+                <textarea name="textarea" rows="3" cols="30" placeholder="Write here..." required></textarea>
+            </label>
+            <!--Terms & Condition-->
+            <p>By creating an account you agree to our <a href="https://en.wikipedia.org/wiki/Terms_of_service">Terms & Condition</a>.</p>
+            <!--Submit-->
+            <input type="submit" onclick="alert('Registration Complete! Thank you for sign up.')" value="Sign Up">
+            <!--Reset-->
+            <input type="reset" value="Reset">
+        </form>
+    </fieldset>
+</body>
+
+</html>
