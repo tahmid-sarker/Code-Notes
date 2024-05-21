@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Custom Property</title>
+    <style>
+      :root {
+        --main-color: #ff0000;
+        --main-bg-color: #f4f4f4;
+        --font-size: 20px;
+      }
+
+      h1 {
+        color: var(--main-color);
+      }
+
+      h5 {
+        color: var(--main-color);
+      }
+
+      .box {
+        border: 1px solid var(--main-color);
+        background-color: var(--main-bg-color);
+        font-size: var(--font-size);
+        padding: 20px;
+        margin: 20px;
+        width: calc(100% - 40px);
+        /* Calc is a CSS function that allows you to perform calculations on the fly. */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My CSS Custom Property</h1>
+    <h5>I am doing something great!</h5>
+    <div class="box">
+      CSS Custom Property is a new feature in CSS that allows you to define your
+      own properties that can be reused throughout your CSS file. This is a
+      great way to keep your CSS clean and organized.
+    </div>
+  </body>
+</html>
