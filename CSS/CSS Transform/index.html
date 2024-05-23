@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        body {
+            margin-left: 20px;
+        }
+        .container, .inner {
+            width: 200px;
+            height: 200px;
+        }
+        .container {
+            border: 2px solid steelblue;
+            background-color: aquamarine;
+            margin: 30px;
+        }
+
+        .inner {
+            border: 2px solid steelblue;
+            box-shadow: 30px blue;
+            background-color: palegoldenrod;
+            /* transform: skewX(30deg); */
+            /* transform: skewY(30deg); */
+            /* transform: skew(30deg, 30deg); */
+            /* transform: scale(0.25 , 0.5); */
+            /* transform: rotate(30deg); */
+            /* transform: translateX(100px); */
+            /* transform: translateY(100px); */
+            /* transform: translate(100px, 100px); */
+        }
+        .inner:hover {
+            transform: scale(0.5) rotate(45deg) translate(100px, -150px);
+        }
+    </style>
+</head>
+<body>
+    <h2>Explore CSS Transform</h2>
+    <div class="container">
+        Container 1
+        <div class="inner">Inner 1</div>
+    </div>
+    <div class="container">
+        Container 2
+        <div class="inner">Inner 2</div>
+    </div>
+    <div class="container">
+        Container 3
+        <div class="inner">Inner 3</div>
+    </div>
+</body>
+</html>
