@@ -1,0 +1,19 @@
+h1, h2 { /* Grouping */
+    color: blueviolet;
+}
+
+.box > p { /* Parent > Child */
+    color: firebrick;
+}
+
+.box li { /* Parent(Ancestor) Descendant */
+    color: blue;
+}
+
+li.done { /* Chaining */
+    color: seagreen;
+}
+
+ul p.done { /* Multiple Combiners. You can use this also (ul > p.done) */
+    font-size: 0.5rem;
+}
