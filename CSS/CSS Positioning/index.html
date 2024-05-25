@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Positioning Exercise</title>
+    <style>
+      .blue-box {
+        background-color: blue;
+        width: 500px;
+        height: 300px;
+        position: relative; /*position: absolute;*/ /* This will make the blue box go to the top left corner of the page. Because there is no Ancestor for this  */
+        left: 200px;
+        top: 200px;
+      }
+      .red-circle {
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        position: absolute; /*position: fixed;*/ /* This will make the red circle go to the top left corner of the page */
+        left: 250px;
+        top: 150px;
+        /* z-index: -1; */ /* This will make the red circle go behind the blue box */
+      }
+      footer {
+        text-align: center;
+        margin-top: 50%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="blue-box">
+      <div class="red-circle"></div>
+    </div>
+  </body>
+</html>
